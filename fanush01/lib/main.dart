@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fanush01/login.dart';
+import 'package:fanush01/signup.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -80,7 +81,7 @@ class HomePage extends StatelessWidget {
                     minWidth:double.infinity,
                     height:60,
                     onPressed:(){
-                      //Navigator.push(context, MaterialPageRoute(builder: (context) => SignUpPage()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => SignUpPage()));
                     },
                     color:Color(0xffF78E26),
                     shape:RoundedRectangleBorder(
