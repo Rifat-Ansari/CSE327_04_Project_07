@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fanush01/login.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -45,7 +46,7 @@ class HomePage extends StatelessWidget {
                 height:MediaQuery.of(context).size.height/2,
                 decoration:BoxDecoration(
                   image: DecorationImage(
-                    image:AssetImage("")
+                    image:AssetImage("assets/images/logo.png")
                   )
                 ),
               ),
@@ -56,7 +57,7 @@ class HomePage extends StatelessWidget {
                     minWidth: double.infinity,
                     height: 60,
                     onPressed: () {
-                      //Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()));
                     },
                     shape: RoundedRectangleBorder(
                       side: BorderSide(
